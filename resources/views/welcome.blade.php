@@ -9,6 +9,7 @@
 <body>
 
     {{-- <livewire:hello-world /> --}}
-    <livewire:counter />
+    {{-- <livewire:counter /> --}}
+    <livewire:todos />
 </body>
 </html>
