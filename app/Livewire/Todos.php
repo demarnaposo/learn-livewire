@@ -2,7 +2,11 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
+
+
+#[Title('List of Todos')]
 
 class Todos extends Component
 {
