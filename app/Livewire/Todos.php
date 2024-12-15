@@ -8,11 +8,7 @@ class Todos extends Component
 {
 
     public $todo = '';
-    public $todos = [
-
-        'Take out trash',
-        'Do dishes'
-    ];
+    public $todos = ['who cares'];
 
     public function add() {
 
@@ -24,6 +20,39 @@ class Todos extends Component
 
         $this->reset('todo');
     }
+
+    public function updatedTodo($value)
+    {
+
+        // dd($property, $value);
+        $this->todo = strtoupper($value);
+
+        // using in blade wire:model.change to automate validation
+        // $this->validate();
+
+
+    }
+
+
+    // public function updated($property, $value)
+    // {
+
+    //     // dd($property, $value);
+    //     $this->$property = strtoupper($value);
+
+    // }
+
+    // public function mount() {
+
+    //     $this->todos = [
+
+    //         'Take out trash',
+    //         'Do dishes'
+    //     ];
+
+
+    // }
+
     public function render()
     {
         return view('livewire.todos');
